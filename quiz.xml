@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root
+  URL="https://www.quirksmode.org/html5/videos/big_buck_bunny.mp4"
+  Count="2">
+  <Quiz
+    name="3">
+    <pause>36</pause>
+    <Answers>
+      <Answer>0</Answer>
+      <Buttons
+        count="1">
+        <Button
+          index="0">
+          <Position>[-195, 407]</Position>
+          <AnchorMin>[0.5, 0.5]</AnchorMin>
+          <AnchorMax>[0.5, 0.5]</AnchorMax>
+          <Pivot>[0, 1]</Pivot>
+          <Size>[376, 296]</Size>
+        </Button>
+      </Buttons>
+    </Answers>
+  </Quiz>
+  <Quiz
+    name="tree">
+    <pause>727</pause>
+    <Answers>
+      <Buttons
+        count="0">
+        <TextGraphic />
+      </Buttons>
+    </Answers>
+  </Quiz>
+</Root>
