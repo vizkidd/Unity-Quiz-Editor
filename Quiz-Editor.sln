@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2015
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Quiz-Editor", "Quiz-Editor.csproj", "{9AFC0E4F-E6EC-A2AF-7B61-7DCAD5FA29A2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Quiz-Editor.Editor", "Quiz-Editor.Editor.csproj", "{C546C727-793E-1814-30A2-DED65F734432}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9AFC0E4F-E6EC-A2AF-7B61-7DCAD5FA29A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9AFC0E4F-E6EC-A2AF-7B61-7DCAD5FA29A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9AFC0E4F-E6EC-A2AF-7B61-7DCAD5FA29A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9AFC0E4F-E6EC-A2AF-7B61-7DCAD5FA29A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C546C727-793E-1814-30A2-DED65F734432}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C546C727-793E-1814-30A2-DED65F734432}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C546C727-793E-1814-30A2-DED65F734432}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C546C727-793E-1814-30A2-DED65F734432}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
