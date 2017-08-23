@@ -153,7 +153,7 @@ public class CreateButtonDynamic : MonoBehaviour {
         if (QuizManager.selectedQuiz != null)
         {
             GetComponent<Button>().interactable = false;
-            player.time = QuizManager.selectedQuiz.pauseFrame;
+            player.frame = QuizManager.selectedQuiz.pauseFrame;
             player.Pause();
             Cursor.SetCursor(cursor, new Vector2(cursor.width / 2, cursor.height / 2), CursorMode.ForceSoftware);
             currentState = State.GettingPosition;

@@ -74,10 +74,46 @@ public class SerializeElements : MonoBehaviour {
                     writer.WriteElementString("Size", sDelta.ToString());
                     writer.WriteEndElement();
                 }
+                writer.WriteStartElement("Text");
                 foreach (TextGraphic item in quiz.textGraphic)
                 {
+                    RectTransform trT = item.text.rectTransform;
+                    SerializableVector2 sPosition = new SerializableVector2(trT.anchoredPosition.x, trT.anchoredPosition.y);
+                    SerializableVector2 sDelta = new SerializableVector2(trT.sizeDelta.x, trT.sizeDelta.y);
+                    SerializableColor tsColor = new SerializableColor(item.text.color.r, item.text.color.g, item.text.color.b, item.text.color.a);
+                  
                     writer.WriteStartElement("TextGraphic");
+                    writer.WriteAttributeString("outline", item.outline.enabled.ToString());
+                    writer.WriteAttributeString("shadow", item.outline.enabled.ToString());
+                    writer.WriteElementString("Position", sPosition.ToString());
+                    writer.WriteElementString("Size", sDelta.ToString());
+                    writer.WriteElementString("Text", item.text.text);
+                    writer.WriteElementString("FontSize", item.text.fontSize.ToString());
+                    writer.WriteElementString("HOverflow", item.text.horizontalOverflow.ToString());
+                    writer.WriteElementString("Color", tsColor.ToString());
+                    writer.WriteElementString("Style", item.text.fontStyle.ToString());
+                    writer.WriteElementString("Align", item.text.alignment.ToString());
+                    if (item.outline.enabled)
+                    {
+                        SerializableVector2 osWidth = new SerializableVector2(item.outline.effectDistance.x, item.outline.effectDistance.y);
+                        SerializableColor osColor = new SerializableColor(item.outline.effectColor.r, item.outline.effectColor.g, item.outline.effectColor.b, item.outline.effectColor.a);
+                        writer.WriteStartElement("Outline");
+                        writer.WriteElementString("Width", osWidth.ToString());
+                        writer.WriteElementString("Color", osColor.ToString());
+                        writer.WriteEndElement();
+                    }
+                    if (item.shadow.enabled)
+                    {
+                        SerializableVector2 ssWidth = new SerializableVector2(item.shadow.effectDistance.x, item.shadow.effectDistance.y);
+                        SerializableColor ssColor = new SerializableColor(item.shadow.effectColor.r, item.shadow.effectColor.g, item.shadow.effectColor.b, item.shadow.effectColor.a);
+                        writer.WriteStartElement("Shadow");
+                        writer.WriteElementString("Width", ssWidth.ToString());
+                        writer.WriteElementString("Color", ssColor.ToString());
+                        writer.WriteEndElement();
+                    }
+                    writer.WriteEndElement();
                 }
+                writer.WriteEndElement();
                 writer.WriteEndElement();
                 writer.WriteEndElement();
                 writer.WriteEndElement();

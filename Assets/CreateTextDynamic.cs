@@ -175,7 +175,7 @@ public class CreateTextDynamic : MonoBehaviour {
     public void DiscardChanges()
     {
         StartCoroutine(DisableConfigCO(configCanvas));
-        selectedButton.interactable = true;
+        //selectedButton.interactable = true;
         currentState = State.End;
     }
 
@@ -188,11 +188,12 @@ public class CreateTextDynamic : MonoBehaviour {
     }
     public void CreateTextBox()
     {
-
+        
+        
         if (QuizManager.selectedQuiz != null)
         {
             GetComponent<Button>().interactable = false;
-            player.time = QuizManager.selectedQuiz.pauseFrame;
+            player.frame = QuizManager.selectedQuiz.pauseFrame;
             player.Pause();
             Cursor.SetCursor(cursor, new Vector2(cursor.width / 2, cursor.height / 2), CursorMode.ForceSoftware);
             currentState = State.CreatingTextBox;

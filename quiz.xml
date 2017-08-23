@@ -1,32 +1,36 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Root
-  URL="https://www.quirksmode.org/html5/videos/big_buck_bunny.mp4"
-  Count="2">
+  Video="video"
+  Path="Assets/video.mp4"
+  Count="1">
   <Quiz
-    name="3">
-    <pause>36</pause>
-    <Answers>
-      <Answer>0</Answer>
-      <Buttons
-        count="1">
-        <Button
-          index="0">
-          <Position>[-195, 407]</Position>
-          <AnchorMin>[0.5, 0.5]</AnchorMin>
-          <AnchorMax>[0.5, 0.5]</AnchorMax>
-          <Pivot>[0, 1]</Pivot>
-          <Size>[376, 296]</Size>
-        </Button>
-      </Buttons>
-    </Answers>
-  </Quiz>
-  <Quiz
-    name="tree">
-    <pause>727</pause>
+    name="s">
+    <pause>38</pause>
     <Answers>
       <Buttons
         count="0">
-        <TextGraphic />
+        <Text>
+          <TextGraphic
+            outline="True"
+            shadow="True">
+            <Position>[50.5, 302]</Position>
+            <Size>[771, 260]</Size>
+            <Text>sdsdf</Text>
+            <FontSize>155</FontSize>
+            <HOverflow>Wrap</HOverflow>
+            <Color>[0, 0, 0 , 1]</Color>
+            <Style>Normal</Style>
+            <Align>MiddleLeft</Align>
+            <Outline>
+              <Width>[3, -3]</Width>
+              <Color>[1, 1, 1 , 1]</Color>
+            </Outline>
+            <Shadow>
+              <Width>[3, -3]</Width>
+              <Color>[1, 0.9222586, 0 , 1]</Color>
+            </Shadow>
+          </TextGraphic>
+        </Text>
       </Buttons>
     </Answers>
   </Quiz>

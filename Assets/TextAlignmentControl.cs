@@ -84,21 +84,21 @@ public class TextAlignmentControl : MonoBehaviour {
         {
             case HAlign.Left:
                 block = left.colors;
-                block.normalColor = hightlightColor;
+                block.normalColor = block.highlightedColor = hightlightColor;
                 left.colors = block;
                 block.normalColor = block.highlightedColor = normalColor;
                 centre.colors = right.colors = block;
                 break;
             case HAlign.Centre:
                 block = centre.colors;
-                block.normalColor = hightlightColor;
+                block.normalColor = block.highlightedColor = hightlightColor;
                 centre.colors = block;
                 block.normalColor = block.highlightedColor = normalColor;
                 left.colors = right.colors = block;
                 break;
             case HAlign.Right:
                 block = right.colors;
-                block.normalColor = hightlightColor;
+                block.normalColor = block.highlightedColor = hightlightColor;
                 right.colors = block;
                 block.normalColor = block.highlightedColor = normalColor;
                 left.colors = centre.colors = block;
@@ -110,21 +110,21 @@ public class TextAlignmentControl : MonoBehaviour {
         {
             case VAlign.Top:
                 block = top.colors;
-                block.normalColor = hightlightColor;
+                block.normalColor = block.highlightedColor = hightlightColor;
                 top.colors = block;
                 block.normalColor = block.highlightedColor = normalColor;
                 middle.colors = bottom.colors = block;
                 break;
             case VAlign.Middle:
                 block = middle.colors;
-                block.normalColor = hightlightColor;
+                block.normalColor = block.highlightedColor= hightlightColor;
                 middle.colors = block;
                 block.normalColor = block.highlightedColor = normalColor;
                 top.colors = bottom.colors = block;
                 break;
             case VAlign.Bottom:
                 block = bottom.colors;
-                block.normalColor = hightlightColor;
+                block.normalColor = block.highlightedColor = hightlightColor;
                 bottom.colors = block;
                 block.normalColor = block.highlightedColor= normalColor;
                 top.colors = middle.colors = block;

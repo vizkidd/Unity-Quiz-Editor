@@ -9,7 +9,7 @@ public class SwitchView : MonoBehaviour {
         show = !show;
         if (!show)
         {
-            if (QuizManager.selectedQuiz.buttons != null)
+            if (QuizManager.selectedQuiz !=null &&QuizManager.selectedQuiz.buttons != null)
             {
                 foreach (var item in QuizManager.selectedQuiz.buttons)
                 {

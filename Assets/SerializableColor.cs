@@ -9,7 +9,7 @@ public struct SerializableColor
     /// <summary>
     /// x component
     /// </summary>
-    public byte r,g,b,a;
+    public float r,g,b,a;
 
     /// <summary>
     /// y component
@@ -22,7 +22,7 @@ public struct SerializableColor
     /// <param name="rG"></param>
     /// <param name = "rB" ></ param >
     /// <param name="rA"></param>
-    public SerializableColor(byte rR, byte rG, byte rB, byte rA)
+    public SerializableColor(float rR, float rG, float rB, float rA)
     {
         r = rR;
         g = rG;
@@ -47,7 +47,7 @@ public struct SerializableColor
     /// <returns></returns>
     public static implicit operator Color32(SerializableColor rValue)
     {
-        return new Color32(rValue.r, rValue.g, rValue.b, rValue.a);
+        return new Color(rValue.r, rValue.g, rValue.b, rValue.a);
     }
 
     /// <summary>
