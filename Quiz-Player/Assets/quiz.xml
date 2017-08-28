@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root
+  Count="3">
+  <Quiz
+    name="s">
+    <pause>2.62808319991109</pause>
+    <Answers>
+      <Answer>0</Answer>
+      <Answer>2</Answer>
+      <Buttons
+        count="4">
+        <Button
+          index="0">
+          <Position>[-455, 420]</Position>
+          <AnchorMin>[0.5, 0.5]</AnchorMin>
+          <AnchorMax>[0.5, 0.5]</AnchorMax>
+          <Pivot>[0, 1]</Pivot>
+          <Size>[536, 294]</Size>
+        </Button>
+        <Button
+          index="1">
+          <Position>[288, 381]</Position>
+          <AnchorMin>[0.5, 0.5]</AnchorMin>
+          <AnchorMax>[0.5, 0.5]</AnchorMax>
+          <Pivot>[0, 1]</Pivot>
+          <Size>[258, 230]</Size>
+        </Button>
+        <Button
+          index="2">
+          <Position>[-345, -89]</Position>
+          <AnchorMin>[0.5, 0.5]</AnchorMin>
+          <AnchorMax>[0.5, 0.5]</AnchorMax>
+          <Pivot>[0, 1]</Pivot>
+          <Size>[462, 204]</Size>
+        </Button>
+        <Button
+          index="3">
+          <Position>[296, -53]</Position>
+          <AnchorMin>[0.5, 0.5]</AnchorMin>
+          <AnchorMax>[0.5, 0.5]</AnchorMax>
+          <Pivot>[0, 1]</Pivot>
+          <Size>[321, 383]</Size>
+        </Button>
+      </Buttons>
+    </Answers>
+  </Quiz>
+  <Quiz
+    name="$$$">
+    <pause>52.7916666666667</pause>
+    <Answers>
+      <Answer>1</Answer>
+      <Answer>2</Answer>
+      <Buttons
+        count="4">
+        <Button
+          index="0">
+          <Position>[-325, 453]</Position>
+          <AnchorMin>[0.5, 0.5]</AnchorMin>
+          <AnchorMax>[0.5, 0.5]</AnchorMax>
+          <Pivot>[0, 1]</Pivot>
+          <Size>[136, 182]</Size>
+        </Button>
+        <Button
+          index="1">
+          <Position>[556, 478]</Position>
+          <AnchorMin>[0.5, 0.5]</AnchorMin>
+          <AnchorMax>[0.5, 0.5]</AnchorMax>
+          <Pivot>[1, 1]</Pivot>
+          <Size>[337, 298]</Size>
+        </Button>
+        <Button
+          index="2">
+          <Position>[-82, -178]</Position>
+          <AnchorMin>[0.5, 0.5]</AnchorMin>
+          <AnchorMax>[0.5, 0.5]</AnchorMax>
+          <Pivot>[1, 0]</Pivot>
+          <Size>[222, 263]</Size>
+        </Button>
+        <Button
+          index="3">
+          <Position>[554, 65]</Position>
+          <AnchorMin>[0.5, 0.5]</AnchorMin>
+          <AnchorMax>[0.5, 0.5]</AnchorMax>
+          <Pivot>[0, 0]</Pivot>
+          <Size>[173, 127]</Size>
+        </Button>
+      </Buttons>
+    </Answers>
+  </Quiz>
+  <Quiz
+    name="dummy">
+    <pause>65.9166666666667</pause>
+    <Answers>
+      <Buttons
+        count="0" />
+    </Answers>
+  </Quiz>
+</Root>
