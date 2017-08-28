@@ -2,36 +2,120 @@
 <Root
   Video="video"
   Path="Assets/video.mp4"
-  Count="1">
+  Count="2">
   <Quiz
-    name="s">
-    <pause>38</pause>
+    name="Start">
+    <pause>266</pause>
     <Answers>
       <Buttons
-        count="0">
-        <Text>
-          <TextGraphic
-            outline="True"
-            shadow="True">
-            <Position>[50.5, 302]</Position>
-            <Size>[771, 260]</Size>
-            <Text>sdsdf</Text>
-            <FontSize>155</FontSize>
-            <HOverflow>Wrap</HOverflow>
+        count="0" />
+      <Text>
+        <TextGraphic
+          bestfit="True"
+          outline="True"
+          shadow="True">
+          <Position>[-25.5, 371.5]</Position>
+          <Size>[559, 229]</Size>
+          <Text>A Demo 
+by</Text>
+          <FontSize>155</FontSize>
+          <HOverflow>0</HOverflow>
+          <Color>[1, 1, 1 , 1]</Color>
+          <Style>0</Style>
+          <Align>4</Align>
+          <Outline>
+            <Width>[1, -1]</Width>
+            <Color>[1, 0.8491452, 0 , 1]</Color>
+          </Outline>
+          <Shadow>
+            <Width>[1, -1]</Width>
             <Color>[0, 0, 0 , 1]</Color>
-            <Style>Normal</Style>
-            <Align>MiddleLeft</Align>
-            <Outline>
-              <Width>[3, -3]</Width>
-              <Color>[1, 1, 1 , 1]</Color>
-            </Outline>
-            <Shadow>
-              <Width>[3, -3]</Width>
-              <Color>[1, 0.9222586, 0 , 1]</Color>
-            </Shadow>
-          </TextGraphic>
-        </Text>
+          </Shadow>
+        </TextGraphic>
+      </Text>
+    </Answers>
+  </Quiz>
+  <Quiz
+    name="End">
+    <pause>4829</pause>
+    <Answers>
+      <Answer>0</Answer>
+      <Buttons
+        count="2">
+        <Button
+          index="0">
+          <Position>[-256, 194]</Position>
+          <AnchorMin>[0.5, 0.5]</AnchorMin>
+          <AnchorMax>[0.5, 0.5]</AnchorMax>
+          <Pivot>[0, 1]</Pivot>
+          <Size>[569, 142]</Size>
+        </Button>
+        <Button
+          index="1">
+          <Position>[-262, -29]</Position>
+          <AnchorMin>[0.5, 0.5]</AnchorMin>
+          <AnchorMax>[0.5, 0.5]</AnchorMax>
+          <Pivot>[0, 1]</Pivot>
+          <Size>[584, 156]</Size>
+        </Button>
       </Buttons>
+      <Text>
+        <TextGraphic
+          bestfit="True"
+          outline="True"
+          shadow="True">
+          <Position>[25, 359.5]</Position>
+          <Size>[754, 189]</Size>
+          <Text>Did you understand the presented topics?</Text>
+          <FontSize>155</FontSize>
+          <HOverflow>0</HOverflow>
+          <Color>[1, 1, 1 , 1]</Color>
+          <Style>0</Style>
+          <Align>4</Align>
+          <Outline>
+            <Width>[1, -1]</Width>
+            <Color>[1, 0.6663601, 0 , 1]</Color>
+          </Outline>
+          <Shadow>
+            <Width>[1, -1]</Width>
+            <Color>[0, 0, 0 , 1]</Color>
+          </Shadow>
+        </TextGraphic>
+        <TextGraphic
+          bestfit="True"
+          outline="True"
+          shadow="True">
+          <Position>[26, 123.5]</Position>
+          <Size>[440, 101]</Size>
+          <Text>YES</Text>
+          <FontSize>155</FontSize>
+          <HOverflow>0</HOverflow>
+          <Color>[0.3283257, 1, 0 , 1]</Color>
+          <Style>0</Style>
+          <Align>4</Align>
+          <Outline>
+            <Width>[1, -1]</Width>
+            <Color>[0.4078844, 0.475168, 0 , 1]</Color>
+          </Outline>
+        </TextGraphic>
+        <TextGraphic
+          bestfit="True"
+          outline="True"
+          shadow="True">
+          <Position>[30, -108.5]</Position>
+          <Size>[542, 129]</Size>
+          <Text>NO</Text>
+          <FontSize>155</FontSize>
+          <HOverflow>0</HOverflow>
+          <Color>[1, 0.3190705, 0 , 1]</Color>
+          <Style>0</Style>
+          <Align>4</Align>
+          <Outline>
+            <Width>[1, -1]</Width>
+            <Color>[0.4078844, 0.475168, 0 , 1]</Color>
+          </Outline>
+        </TextGraphic>
+      </Text>
     </Answers>
   </Quiz>
 </Root>

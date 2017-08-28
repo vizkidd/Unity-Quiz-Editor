@@ -53,6 +53,7 @@ public class SerializeElements : MonoBehaviour {
                 {
                     writer.WriteElementString("Answer", index.ToString());
                 }
+                
                 writer.WriteStartElement("Buttons");
                 writer.WriteAttributeString("count", quiz.buttons.Count.ToString());
                 foreach (Button button in quiz.buttons as List<Button>)
@@ -74,6 +75,7 @@ public class SerializeElements : MonoBehaviour {
                     writer.WriteElementString("Size", sDelta.ToString());
                     writer.WriteEndElement();
                 }
+                writer.WriteEndElement();
                 writer.WriteStartElement("Text");
                 foreach (TextGraphic item in quiz.textGraphic)
                 {
@@ -83,16 +85,17 @@ public class SerializeElements : MonoBehaviour {
                     SerializableColor tsColor = new SerializableColor(item.text.color.r, item.text.color.g, item.text.color.b, item.text.color.a);
                   
                     writer.WriteStartElement("TextGraphic");
+                    writer.WriteAttributeString("bestfit",item.text.resizeTextForBestFit.ToString());
                     writer.WriteAttributeString("outline", item.outline.enabled.ToString());
                     writer.WriteAttributeString("shadow", item.outline.enabled.ToString());
                     writer.WriteElementString("Position", sPosition.ToString());
                     writer.WriteElementString("Size", sDelta.ToString());
                     writer.WriteElementString("Text", item.text.text);
                     writer.WriteElementString("FontSize", item.text.fontSize.ToString());
-                    writer.WriteElementString("HOverflow", item.text.horizontalOverflow.ToString());
+                    writer.WriteElementString("HOverflow", ((int)item.text.horizontalOverflow).ToString());
                     writer.WriteElementString("Color", tsColor.ToString());
-                    writer.WriteElementString("Style", item.text.fontStyle.ToString());
-                    writer.WriteElementString("Align", item.text.alignment.ToString());
+                    writer.WriteElementString("Style", ((int)item.text.fontStyle).ToString());
+                    writer.WriteElementString("Align", ((int)item.text.alignment).ToString());
                     if (item.outline.enabled)
                     {
                         SerializableVector2 osWidth = new SerializableVector2(item.outline.effectDistance.x, item.outline.effectDistance.y);
@@ -113,7 +116,7 @@ public class SerializeElements : MonoBehaviour {
                     }
                     writer.WriteEndElement();
                 }
-                writer.WriteEndElement();
+
                 writer.WriteEndElement();
                 writer.WriteEndElement();
                 writer.WriteEndElement();

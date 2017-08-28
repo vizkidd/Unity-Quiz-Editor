@@ -123,6 +123,7 @@ public class CreateTextDynamic : MonoBehaviour {
             tmpText=tmpTextObject.AddComponent<Text>(configCanvasText);
             tmpText.color = configCanvasText.color;
             tmpText.supportRichText = true;
+            tmpText.raycastTarget = false;
             if (configCanvasTextOutline.enabled)
             {
                 tmpOutline.effectColor = configCanvasTextOutline.effectColor;
