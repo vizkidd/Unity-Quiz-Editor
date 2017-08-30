@@ -11,6 +11,8 @@ public class VideoSourceChooser : MonoBehaviour {
         player = GameObject.FindObjectOfType<VideoPlayer>();
         player.errorReceived += Player_errorReceived;
         player.prepareCompleted += Player_prepareCompleted;
+        Debug.Log(Application.internetReachability);
+        Debug.Log(Network.isClient);
     }
 
     private void Player_prepareCompleted(VideoPlayer source)

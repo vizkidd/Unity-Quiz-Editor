@@ -29,7 +29,7 @@ public class SerializeElements : MonoBehaviour {
   
     public void SerializeQuiz()
     {
-        using (XmlWriter writer = XmlWriter.Create("quiz.xml",settings))
+        using (XmlWriter writer = XmlWriter.Create(Application.persistentDataPath+"/quiz.xml",settings))
         {
             writer.WriteStartDocument();
 
